@@ -15,8 +15,8 @@ public class Guessing : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+	
 		if(Input.GetKeyDown(KeyCode.UpArrow)){
-		
 			minNum = guess;
 			NextGuess();
 		} else if (Input.GetKeyDown(KeyCode.DownArrow)){
@@ -32,6 +32,7 @@ public class Guessing : MonoBehaviour {
 		maxNum = 1000;
 		minNum = 1;
 		guess = 500;
+		
 		print ("====================");
 		print ("Welcome");
 		print ("Pick a number, any number and don't tell anyone!");
